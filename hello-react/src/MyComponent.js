@@ -105,5 +105,7 @@ class MyComponent extends Component {
     );
   }
 }
+// props는 부모 component가 설정하고, state는 component 자체적으로 지닌 값으로 내부에서 값 업데이트 가능
+// 하지만 이것도 무조건 고정적이진 않음.
 
 export default MyComponent;
