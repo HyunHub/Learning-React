@@ -62,7 +62,7 @@ MyComponent.propTypes = {
 
 // import React, { Component } from 'react';
 
-class MyComponent extends Component {
+/* class MyComponent extends Component {
   render() {
     const { name, favoriteNumber, children } = this.props; // 비구조화 할당
     return (
@@ -82,6 +82,28 @@ MyComponent.defaultProps = {
 MyComponent.propTypes = {
   name: PropTypes.string,
   favoriteNumber: PropTypes.number.isRequired,
-};
+}; */
+
+// class 내부에서 지정도 가능
+class MyComponent extends Component {
+  static defaultProps = {
+    name: "default",
+  };
+
+  static propTypes = {
+    name: PropTypes.string,
+    favoriteNumber: PropTypes.number.isRequired,
+  };
+  render() {
+    const { name, favoriteNumber, children } = this.props; // 비구조화 할당
+    return (
+      <div>
+        Hi, My name is {name} <br />
+        children is {children} <br />
+        favoriteNumber is {favoriteNumber}
+      </div>
+    );
+  }
+}
 
 export default MyComponent;
