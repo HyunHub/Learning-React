@@ -15,11 +15,21 @@ function App() { // APP 이라는 Component를 만들어 줌 - 함수형 Compone
 
   //return <div>{name ==='React' && <h1>React !!</h1>}</div>;
 
-  const ud = undefined;
+  //const ud = undefined;
 
  // return ud || 'undefined 입니다'; undefined 입니다 출력
  // return <div>{ud || 'React'}</div>;  React 출력
  // return <div>{ud}</div>;  JSX 내부에서 렌더링 하는 것은 괜찮, 하지만 return ud; 는 불가능 
+
+  const style = {
+    backgroundColor: 'black', // background-Color (camelCase)
+    color: 'aqua',
+    fontSize: '48px',
+    fontWeight: 'bold',
+    padding: 16
+  };
+
+  return <div style={style}>{name}</div>;
  
 }
 
