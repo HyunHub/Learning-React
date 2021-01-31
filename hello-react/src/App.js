@@ -27,6 +27,7 @@ function App() { // APP 이라는 Component를 만들어 줌 - 함수형 Compone
     fontSize: '48px',
     fontWeight: 'bold',
     padding: 16
+    
   };
 
   return <div style={style}>{name}</div>;
