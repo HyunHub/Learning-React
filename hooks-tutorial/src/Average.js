@@ -25,7 +25,8 @@ const Average = () => {
       inputEl.current.focus();
     },
     [number, list]
-  ); // number 혹은 list가 바뀌었을 때만 함수 생성
+  );
+  // number 혹은 list가 바뀌었을 때만 함수 생성
   // number와 list를 조회해서 nextList를 생성하기 때문에 배열 안에 꼭 넣어줘야 함
 
   const avg = useMemo(() => getAverage(list), [list]);
