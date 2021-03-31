@@ -1,6 +1,6 @@
 // import React, { useReducer } from "react";
 import React from "react";
-import useInputs from "./uesInputs"; // useInputs
+import useInputs from "./uesInputs";
 
 // function reducer(state, action) {
 //   return {
